@@ -1,0 +1,978 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<style type="text/css">
+    .demo
+{
+    padding: 100px 0;
+}
+.heading-title
+{
+    margin-bottom: 100px;
+}
+.our-team{
+    box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.our-team .pic:before{
+    content: "";
+    background: #716a9e;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    bottom: 10px;
+    right: 10px;
+    opacity: 0.78;
+    transform: scale(0);
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.our-team:hover .pic:before{
+    transform: scale(1);
+}
+
+.our-team .pic img{
+    width: 100%;
+    height: auto;
+}
+
+.our-team .social{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    position: absolute;
+    top: 40%;
+    opacity: 0;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.our-team:hover .social{
+    opacity: 1;
+}
+
+.our-team .social li{
+    display: inline-block;
+    position: relative;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.our-team .social li:nth-child(1){
+    transform: translate3d(22px, -19px, 0px);
+}
+
+.our-team:hover .social li:nth-child(1){
+    transform: translate3d(62px, -19px, 0px);
+}
+
+.our-team .social li:nth-child(2){
+    transform: translate3d(36px, 38px, 0px);
+}
+
+.our-team:hover .social li:nth-child(2){
+    transform: translate3d(36px, 8px, 0px);
+}
+
+.our-team .social li:nth-child(3){
+    transform: translate3d(-18px, -75px, 0px);
+}
+
+.our-team:hover .social li:nth-child(3){
+    transform: translate3d(-18px, -46px, 0px);
+}
+
+.our-team .social li:nth-child(4){
+    transform: translate3d(-5px, -19px, 0px);
+}
+
+.our-team:hover .social li:nth-child(4){
+    transform: translate3d(-43px, -19px, 0px);
+}
+
+.our-team .social li a{
+    display: block;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    background: #333;
+    font-size: 16px;
+    color: #fff;
+    margin: 0 15px 0 0;
+    transform: rotate(45deg);
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.our-team .social li a:hover{
+    line-height: 35px;
+    background: #fff;
+    color: #333;
+    transform: rotate(-45deg);
+}
+
+.our-team .social li a i{
+    transform: rotate(-45deg);
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.our-team .social li a:hover i{
+    transform: rotate(45deg);
+}
+
+.our-team .team-content{
+    padding: 15px 10px;
+    background: #fff;
+    position: relative;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.our-team .title{
+    font-size: 18px;
+    font-weight: 700;
+    color: #333;
+    text-transform: uppercase;
+    margin: 0 0 12px 0;
+}
+
+.our-team small{
+    display: block;
+    font-size: 14px;
+    color: #999;
+    margin-bottom: 8px;
+}
+
+.our-team .team-layer{
+    width: 100%;
+    padding: 34px 10px;
+    background: #f7f7f7;
+    border-bottom: 2px solid #716a9e;
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+    opacity: 0;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.our-team:hover .team-layer{
+    bottom: 0;
+    opacity: 1;
+}
+
+.our-team .team-layer a{
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 700;
+    color: #333;
+    text-transform: uppercase;
+    margin: 0 0 12px 0;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.our-team .team-layer a:hover{
+    color: #716a9e;
+}
+
+.our-team .post{
+    display: block;
+    font-size: 14px;
+    color: #999;
+    text-transform: capitalize;
+}
+
+@media only screen and (max-width: 990px){
+    .our-team{ margin-bottom: 35px; }
+}@charset "utf-8";
+</style>
+<title> Struktur Organisasi OSIS  </title>
+</head>
+
+<body>
+ <div class="demo">
+        <div class="container">
+            <div class="row text-center">
+                <h1> Dosen Fakultas Teknologi, Informasi, & Komunikasi </h1>
+                <hr>
+                <h2>Universitas Semarang</h2>
+            </div>
+            <br>
+            <br>
+                <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <div class="our-team">
+                        <div class="pic">
+                            <img src="dosen/img/foto1.jpg" alt=""/>
+                            <ul class="social">
+                                <li><a href="https://www.facebook.com/hiskia.anggi" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="https://www.instagram.com/hiskianggi" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                                <li><a href="mailto:hiskia.anggi@my.gavilan.edu"><i class="fa fa-inbox"></i></a></li>
+                                <li><a href="https://blogs.zone.id" target="_blank"><i class="fa fa-pencil"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="team-content">
+                            <h3 class="title">Dr. Titin Winarti, S.Kom, MM</h3>
+                            <small class="post"></small>
+                        </div>
+                        <div class="team-layer">
+                            <a>Dr. Titin Winarti, S.Kom, MM</a>
+                            <span class="post"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="our-team">
+                        <div class="pic">
+                            <img src="dosen/img/foto2.jpg" alt=""/>
+                            <ul class="social">
+                                <li><a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                                <li><a href="mailto:"><i class="fa fa-google"></i></a></li>
+                                <li><a href="https://" target="_blank"><i class="fa fa-pencil"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="team-content">
+                            <h3 class="title">Vensy Vydia, S.Kom, M.Kom</h3>
+                            <small class="post"></small>
+                        </div>
+                        <div class="team-layer">
+                            <a>Vensy Vydia, S.Kom, M.Kom</a>
+                            <span class="post"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="our-team">
+                        <div class="pic">
+                            <img src="dosen/img/foto3.jpg" alt=""/>
+                            <ul class="social">
+                                <li><a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                                <li><a href="mailto:"><i class="fa fa-google"></i></a></li>
+                                <li><a href="https://" target="_blank"><i class="fa fa-pencil"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="team-content">
+                            <h3 class="title">Titis Handayani, S.Kom, M.Cs</h3>
+                            <small class="post"></small>
+
+                        </div>
+                        <div class="team-layer">
+                            <a>Titis Handayani, S.Kom, M.Cs</a>
+                            <span class="post"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="our-team">
+                        <div class="pic">
+                            <img src="dosen/img/foto4.jpg" alt=""/>
+                            <ul class="social">
+                                <li><a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                                <li><a href="mailto:"><i class="fa fa-google"></i></a></li>
+                                <li><a href="https://" target="_blank"><i class="fa fa-pencil"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="team-content">
+                            <h3 class="title">Susanto, S.Kom, M.Kom</h3>
+                            <small class="post"></small>
+
+                        </div>
+                        <div class="team-layer">
+                            <a>Susanto, S.Kom, M.Kom</a>
+                            <span class="post"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p>
+                <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <div class="our-team">
+                        <div class="pic">
+                            <img src="dosen/img/foto5.jpg" alt=""/>
+                            <ul class="social">
+                                <li><a href="https://www.facebook.com/wiwik.whynsh" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="https://www.instagram.com/wiwikwhynsh_04" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                                <li><a href="mailto:wikwi075@gmail.com"><i class="fa fa-google"></i></a></li>
+                                <li><a href="http://wiwikblog12.blogspot.com" target="_blank"><i class="fa fa-pencil"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="team-content">
+                            <h3 class="title">Nur Wakhidah, S.Kom, M.Cs</h3>
+                            <small class="post"></small>
+                        </div>
+                        <div class="team-layer">
+                            <a>Nur Wakhidah, S.Kom, M.Cs</a>
+                            <span class="post"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="our-team">
+                        <div class="pic">
+                            <img src="dosen/img/foto6.jpg" alt=""/>
+                            <ul class="social">
+                                <li><a href="https://www.facebook.com/ami.u.ashari" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="https://www.instagram.com/aminuddin_sa" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                                <li><a href="mailto:aminuddinshofi17@gmail.com"><i class="fa fa-google"></i></a></li>
+                                <li><a href="http://realaminuddin.blogspot.com" target="_blank"><i class="fa fa-pencil"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="team-content">
+                            <h3 class="title">Prind Tri Ajeng P, S.Kom, M.Kom </h3>
+                            <small class="post"></small>
+                        </div>
+                        <div class="team-layer">
+                            <a>Prind Tri Ajeng P, S.Kom, M.Kom </a>
+                            <span class="post"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="our-team">
+                        <div class="pic">
+                            <img src="dosen/img/foto7.jpg" alt=""/>
+                            <ul class="social">
+                                <li><a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                                <li><a href="mailto:"><i class="fa fa-google"></i></a></li>
+                                <li><a href="https://" target="_blank"><i class="fa fa-pencil"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="team-content">
+                            <h3 class="title">Dr. Mochamad Chaerul Latif, S.Sos, M.Si</h3>
+                            <small class="post"></small>
+
+                        </div>
+                        <div class="team-layer">
+                            <a>Dr. Mochamad Chaerul Latif, S.Sos, M.Si</a>
+                            <span class="post"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="our-team">
+                        <div class="pic">
+                            <img src="dosen/img/foto8.jpg" alt=""/>
+                            <ul class="social">
+                                <li><a href="https://www.facebook.com/alfina.naur" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="https://www.instagram.com/fina_naur" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                                <li><a href="mailto:alfinanur.rohmah@gmail.com"><i class="fa fa-google"></i></a></li>
+                                <li><a target="_blank"><i class="fa fa-pencil"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="team-content">
+                            <h3 class="title">Yuliyanto Budi Setiawan, S.Sos, M.Si.</h3>
+                            <small class="post"></small>
+
+                        </div>
+                        <div class="team-layer">
+                            <a>Yuliyanto Budi Setiawan, S.Sos, M.Si.</a>
+                            <span class="post"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </p>
+                        <p>
+                <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <div class="our-team">
+                        <div class="pic">
+                            <img src="dosen/img/foto9.jpg" alt=""/>
+                            <ul class="social">
+                                <li><a href="https://www.facebook.com/ludin.muhammad.92" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                                <li><a href="mailto:muh.Kamalludin@gmail.com"><i class="fa fa-google"></i></a></li>
+                                <li><a href="http://myblogmuhammadkamal.blogspot.com" target="_blank"><i class="fa fa-pencil"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="team-content">
+                            <h3 class="title">Sri Handayani,ST,MT</h3>
+                            <small class="post"></small>
+                        </div>
+                        <div class="team-layer">
+                            <a>Sri Handayani,ST,MT</a>
+                            <span class="post"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="our-team">
+                        <div class="pic">
+                            <img src="dosen/img/foto10.jpg" alt=""/>
+                            <ul class="social">
+                                <li><a href="https://www.facebook.com/ishanty.loverzz" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="https://www.instagram.com/isyanti_79"  target="_blank"><i class="fa fa-instagram"></i></a></li>
+                                <li><a href="mailto:iissugianti31@gmail.com"><i class="fa fa-google"></i></a></li>
+                                <li><a href="https://www.youtube.com/channel/UCJDma1yD-hRdcPT2sJoSOJQ" target="_blank"><i class="fa fa-youtube"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="team-content">
+                            <h3 class="title">Atmoko Nugroho,ST,M.Eng</h3>
+                            <small class="post"></small>
+                        </div>
+                        <div class="team-layer">
+                            <a>Atmoko Nugroho,ST,M.Eng</a>
+                            <span class="post"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="our-team">
+                        <div class="pic">
+                            <img src="dosen/img/foto11.jpg" alt=""/>
+                            <ul class="social">
+                                <li><a href="https://www.facebook.com/tegarmiftaqur.rohim.1" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="http://tegarblog77.blogspot.com" target="_blank"><i class="fa fa-pencil"></i></a></li>
+                                <li><a href="mailto:tegarmiftaqurrohim@gmail.com"><i class="fa fa-google"></i></a></li>
+                                <li><a href="https://" target="_blank"><i class="fa fa-youtube"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="team-content">
+                            <h3 class="title">B.VERY CHRISTIOKO,S.KOM, M.KOM</h3>
+                            <small class="post"></small>
+
+                        </div>
+                        <div class="team-layer">
+                            <a>B.VERY CHRISTIOKO,S.KOM, M.KOM</a>
+                            <span class="post"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="our-team">
+                        <div class="pic">
+                            <img src="dosen/img/foto12.jpg" alt=""/>
+                            <ul class="social">
+                                <li><a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                                <li><a href="mailto:"><i class="fa fa-google"></i></a></li>
+                                <li><a href="https://" target="_blank"><i class="fa fa-pencil"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="team-content">
+                            <h3 class="title">HENNY INDRIYAWATI, S.KOM, M.KOM</h3>
+                            <small class="post"></small>
+
+                        </div>
+                        <div class="team-layer">
+                            <a>HENNY INDRIYAWATI, S.KOM, M.KOM</a>
+                            <span class="post"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </p>
+                        <p>
+                <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <div class="our-team">
+                        <div class="pic">
+                            <img src="dosen/img/foto13.jpg" alt=""/>
+                            <ul class="social">
+                                <li><a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                                <li><a href="mailto:"><i class="fa fa-google"></i></a></li>
+                                <li><a href="https://" target="_blank"><i class="fa fa-pencil"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="team-content">
+                            <h3 class="title">APRIL FIRMAN DARU,S.Kom, M.Kom</h3>
+                            <small class="post"></small>
+                        </div>
+                        <div class="team-layer">
+                            <a>APRIL FIRMAN DARU,S.Kom, M.Kom</a>
+                            <span class="post"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="our-team">
+                        <div class="pic">
+                            <img src="dosen/img/foto14.jpg" alt=""/>
+                            <ul class="social">
+                                <li><a href="https://www.facebook.com/adelia.c.coboyjunior" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="https://www.instagram.com/adeliavista28" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                                <li><a href="mailto:adeliavistaa28@gmail.com"><i class="fa fa-google"></i></a></li>
+                                <li><a href="http://adeliavm.blogspot.com" target="_blank"><i class="fa fa-pencil"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="team-content">
+                            <h3 class="title">Nurtriana Hidayati, S.Kom, M.Kom</h3>
+                        </div>
+                        <div class="team-layer">
+                            <a>Nurtriana Hidayati, S.Kom, M.Kom</a>
+                            <span class="post">Nurtriana Hidayati, S.Kom, M.Kom</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="our-team">
+                        <div class="pic">
+                            <img src="dosen/img/foto15.jpg" alt=""/>
+                            <ul class="social">
+                                <li><a href="https://www.facebook.com/profile.php?id=100008704660048" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="https://www.instagram.com/Auliya_fika27" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                                <li><a href="mailto:fikanaurr2002@gmail.com"><i class="fa fa-google"></i></a></li>
+                                <li><a target="_blank"><i class="fa fa-pencil"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="team-content">
+                            <h3 class="title">Errika Dwi Setya Watie, S.Sos, M.I.Kom</h3>
+                            <small class="post"></small>
+
+                        </div>
+                        <div class="team-layer">
+                            <a>Errika Dwi Setya Watie, S.Sos, M.I.Kom</a>
+                            <span class="post"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="our-team">
+                        <div class="pic">
+                            <img src="dosen/img/foto16.jpg" alt=""/>
+                            <ul class="social">
+                                <li><a href="https://www.facebook.com/intan.aini.73932" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="https://www.instagram.com/intan.n.aini" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                                <li><a href="mailto:ainiintan68@gmail.com"><i class="fa fa-google"></i></a></li>
+                                <li><a target="_blank"><i class="fa fa-pencil"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="team-content">
+                            <h3 class="title">Edi Nurwahyu Julianto, S.Sos, M.I.Kom</h3>
+                            <small class="post"></a></small>
+
+                        </div>
+                        <div class="team-layer">
+                            <a>Edi Nurwahyu Julianto, S.Sos, M.I.Kom</a>
+                            <span class="post"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </p>
+                        <p>
+                <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <div class="our-team">
+                        <div class="pic">
+                            <img src="dosen/img/foto17.jpg" alt=""/>
+                            <ul class="social">
+                                <li><a href="https://www.facebook.com/nurul.uyung.9421" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="https://www.instagram.com/nurulftkh32" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                                <li><a href="mailto:nurulfatikhah302@gmail.com"><i class="fa fa-google"></i></a></li>
+                                <li><a href="http://nurulfatikhah302.blogspot.com" target="_blank"><i class="fa fa-pencil"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="team-content">
+                            <h3 class="title">HETTY CATUR ELLYAWATI, S.S, M.HUM</h3>
+                            <small class="post"></a></small>
+                        </div>
+                        <div class="team-layer">
+                            <a>HETTY CATUR ELLYAWATI, S.S, M.HUM</a>
+                            <span class="post"><br></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="our-team">
+                        <div class="pic">
+                            <img src="dosen/img/foto18.jpg" alt=""/>
+                            <ul class="social">
+                                <li><a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                                <li><a href="mailto:"><i class="fa fa-google"></i></a></li>
+                                <li><a href="https://" target="_blank"><i class="fa fa-pencil"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="team-content">
+                            <h3 class="title">Whisnumurti Adhiwibowo, ST, M.Kom</h3>
+                            <small class="post"></a></small>
+                        </div>
+                        <div class="team-layer">
+                            <a>Whisnumurti Adhiwibowo, ST, M.Kom</a>
+                            <span class="post"><br></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="our-team">
+                        <div class="pic">
+                            <img src="dosen/img/foto19.jpg" alt=""/>
+                            <ul class="social">
+                                <li><a href="https://www.facebook.com/mancung.tertunda.96" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="https://www.instagram.com/hanamhrdka target="_blank"><i class="fa fa-instagram"></i></a></li>
+                                <li><a href="mailto:hanamahardika14@gmail.com"><i class="fa fa-google"></i></a></li>
+                                <li><a target="_blank"><i class="fa fa-pencil"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="team-content">
+                            <h3 class="title">Basworo Ardi Pramono, ST, MT.</h3>
+                            <small class="post"></small>
+
+                        </div>
+                        <div class="team-layer">
+                            <a>Basworo Ardi Pramono, ST, MT.</a>
+                            <span class="post"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="our-team">
+                        <div class="pic">
+                            <img src="dosen/img/foto20.jpg" alt=""/>
+                            <ul class="social">
+                                <li><a href="https://www.facebook.com/fitria.novianti.336" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="https://www.instagram.com/fitrianovianti381" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                                <li><a href="mailto:fitrianovianti381@gmail.com"><i class="fa fa-google"></i></a></li>
+                                <li><a href="https://kreasibungasabun.blogspot.com" target="_blank"><i class="fa fa-pencil"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="team-content">
+                            <h3 class="title">Fajriannoor Fanani, S.Sos, M.I.Kom</h3>
+                            <small class="post"></small>
+
+                        </div>
+                        <div class="team-layer">
+                            <a>Fajriannoor Fanani, S.Sos, M.I.Kom</a>
+                            <span class="post"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </p>
+                        <p>
+                <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <div class="our-team">
+                        <div class="pic">
+                            <img src="dosen/img/foto21.jpg" alt=""/>
+                            <ul class="social">
+                                <li><a href="https://www.facebook.com/profile.php?id=100013119400089" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="https://www.instagram.com/bagas8545/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                                <li><a href="mailto:aikanggerbagaskara@gmail.com"><i class="fa fa-google"></i></a></li>
+                                <li><a target="_blank"><i class="fa fa-pencil"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="team-content">
+                            <h3 class="title">Gita Aprinta Ester Betseba, S.Sos, M.Si</h3>
+                            <small class="post"></small>
+                        </div>
+                        <div class="team-layer">
+                            <a>Gita Aprinta Ester Betseba, S.Sos, M.Si</a>
+                            <span class="post"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="our-team">
+                        <div class="pic">
+                            <img src="dosen/img/foto22.jpg" alt=""/>
+                            <ul class="social">
+                                <li><a href="https://www.facebook.com/mellya.amelycha" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                                <li><a href="mailto:"><i class="fa fa-google"></i></a></li>
+                                <li><a href="https://" target="_blank"><i class="fa fa-pencil"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="team-content">
+                            <h3 class="title">Febrian Wahyu Christanto, S.Kom., M.Cs.</h3>
+                            <small class="post"></small>
+                        </div>
+                        <div class="team-layer">
+                            <a>Febrian Wahyu Christanto, S.Kom., M.Cs.</a>
+                            <span class="post"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="our-team">
+                        <div class="pic">
+                            <img src="dosen/img/foto23.jpg" alt=""/>
+                            <ul class="social">
+                                <li><a href="https://mbasic.facebook.com/profile.php?id=100022474242474" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                                <li><a target="_blank"><i class="fa fa-instagram"></i></a></li>
+                                <li><a href="mailto:inggridlexsi10@gmail.com"><i class="fa fa-google"></i></a></li>
+                                <li><a target="_blank"><i class="fa fa-pencil"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="team-content">
+                            <h3 class="title">Rastri Prathivi, M.Kom</h3>
+                            <small class="post"></small>
+
+                        </div>
+                        <div class="team-layer">
+                            <a>Rastri Prathivi, M.Kom</a>
+                            <span class="post"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="our-team">
+                        <div class="pic">
+                            <img src="dosen/img/foto24.jpg" alt=""/>
+                            <ul class="social">
+                                <li><a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                                <li><a href="mailto:"><i class="fa fa-google"></i></a></li>
+                                <li><a href="https://" target="_blank"><i class="fa fa-pencil"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="team-content">
+                            <h3 class="title">Aria Hendrawan, ST, M.Kom</h3>
+                            <small class="post"></small>
+
+                        </div>
+                        <div class="team-layer">
+                            <a>Aria Hendrawan, ST, M.Kom</a>
+                            <span class="post"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </p>
+            <p>
+                <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <div class="our-team">
+                        <div class="pic">
+                            <img src="dosen/img/foto25.jpg" alt=""/>
+                            <ul class="social">
+                                <li><a href="https://www.facebook.com/profile.php?id=100013119400089" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="https://www.instagram.com/bagas8545/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                                <li><a href="mailto:aikanggerbagaskara@gmail.com"><i class="fa fa-google"></i></a></li>
+                                <li><a target="_blank"><i class="fa fa-pencil"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="team-content">
+                            <h3 class="title">Kharisma Ayu Febriana, S.I.Kom, M.I.Kom</h3>
+                            <small class="post"></small>
+                        </div>
+                        <div class="team-layer">
+                            <a>Kharisma Ayu Febriana, S.I.Kom, M.I.Kom</a>
+                            <span class="post"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="our-team">
+                        <div class="pic">
+                            <img src="dosen/img/foto-none.jpg" alt=""/>
+                            <ul class="social">
+                                <li><a href="https://www.facebook.com/mellya.amelycha" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                                <li><a href="mailto:"><i class="fa fa-google"></i></a></li>
+                                <li><a href="https://" target="_blank"><i class="fa fa-pencil"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="team-content">
+                            <h3 class="title">Soiful Hadi, S.T, M.Kom</h3>
+                            <small class="post"></small>
+                        </div>
+                        <div class="team-layer">
+                            <a>Soiful Hadi, S.T, M.Kom</a>
+                            <span class="post"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="our-team">
+                        <div class="pic">
+                            <img src="dosen/img/foto26.jpg" alt=""/>
+                            <ul class="social">
+                                <li><a href="https://mbasic.facebook.com/profile.php?id=100022474242474" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                                <li><a target="_blank"><i class="fa fa-instagram"></i></a></li>
+                                <li><a href="mailto:inggridlexsi10@gmail.com"><i class="fa fa-google"></i></a></li>
+                                <li><a target="_blank"><i class="fa fa-pencil"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="team-content">
+                            <h3 class="title">Siti Asmiatun, S.Kom, M.Kom</h3>
+                            <small class="post"></small>
+
+                        </div>
+                        <div class="team-layer">
+                            <a>Siti Asmiatun, S.Kom, M.Kom</a>
+                            <span class="post"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="our-team">
+                        <div class="pic">
+                            <img src="dosen/img/foto27.jpg" alt=""/>
+                            <ul class="social">
+                                <li><a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                                <li><a href="mailto:"><i class="fa fa-google"></i></a></li>
+                                <li><a href="https://" target="_blank"><i class="fa fa-pencil"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="team-content">
+                            <h3 class="title">ASTRID NOVITA PUTRI, M. KOM.</h3>
+                            <small class="post"></small>
+
+                        </div>
+                        <div class="team-layer">
+                            <a>ASTRID NOVITA PUTRI, M. KOM.</a>
+                            <span class="post"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </p>
+            <p>
+                <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <div class="our-team">
+                        <div class="pic">
+                            <img src="dosen/img/foto28.jpg" alt=""/>
+                            <ul class="social">
+                                <li><a href="https://www.facebook.com/profile.php?id=100013119400089" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="https://www.instagram.com/bagas8545/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                                <li><a href="mailto:aikanggerbagaskara@gmail.com"><i class="fa fa-google"></i></a></li>
+                                <li><a target="_blank"><i class="fa fa-pencil"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="team-content">
+                            <h3 class="title">Firdaus Azwar Ersyad, S.Sn, M.Sn</h3>
+                            <small class="post"></small>
+                        </div>
+                        <div class="team-layer">
+                            <a>Firdaus Azwar Ersyad, S.Sn, M.Sn</a>
+                            <span class="post"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="our-team">
+                        <div class="pic">
+                            <img src="dosen/img/foto29.jpg" alt=""/>
+                            <ul class="social">
+                                <li><a href="https://www.facebook.com/mellya.amelycha" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                                <li><a href="mailto:"><i class="fa fa-google"></i></a></li>
+                                <li><a href="https://" target="_blank"><i class="fa fa-pencil"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="team-content">
+                            <h3 class="title">Agusta Praba Ristadi Pinem, S.Kom., M.Kom.</h3>
+                            <small class="post"></small>
+                        </div>
+                        <div class="team-layer">
+                            <a>Agusta Praba Ristadi Pinem, S.Kom., M.Kom.</a>
+                            <span class="post"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="our-team">
+                        <div class="pic">
+                            <img src="dosen/img/foto30.jpg" alt=""/>
+                            <ul class="social">
+                                <li><a href="https://mbasic.facebook.com/profile.php?id=100022474242474" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                                <li><a target="_blank"><i class="fa fa-instagram"></i></a></li>
+                                <li><a href="mailto:inggridlexsi10@gmail.com"><i class="fa fa-google"></i></a></li>
+                                <li><a target="_blank"><i class="fa fa-pencil"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="team-content">
+                            <h3 class="title">Dewi Nurdiyah, S.Kom., M.Kom.</h3>
+                            <small class="post"></small>
+
+                        </div>
+                        <div class="team-layer">
+                            <a>Dewi Nurdiyah, S.Kom., M.Kom.</a>
+                            <span class="post"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="our-team">
+                        <div class="pic">
+                            <img src="dosen/img/foto31.jpg" alt=""/>
+                            <ul class="social">
+                                <li><a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                                <li><a href="mailto:"><i class="fa fa-google"></i></a></li>
+                                <li><a href="https://" target="_blank"><i class="fa fa-pencil"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="team-content">
+                            <h3 class="title">Khoirudin, S.Kom, M.Eng</h3>
+                            <small class="post"></small>
+
+                        </div>
+                        <div class="team-layer">
+                            <a>Khoirudin, S.Kom, M.Eng</a>
+                            <span class="post"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </p>
+            <p>
+                <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <div class="our-team">
+                        <div class="pic">
+                            <img src="dosen/img/foto32.jpg" alt=""/>
+                            <ul class="social">
+                                <li><a href="https://www.facebook.com/profile.php?id=100013119400089" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="https://www.instagram.com/bagas8545/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                                <li><a href="mailto:aikanggerbagaskara@gmail.com"><i class="fa fa-google"></i></a></li>
+                                <li><a target="_blank"><i class="fa fa-pencil"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="team-content">
+                            <h3 class="title">Saifur Rohman Cholil, M.Kom</h3>
+                            <small class="post"></small>
+                        </div>
+                        <div class="team-layer">
+                            <a>Saifur Rohman Cholil, M.Kom</a>
+                            <span class="post"></span>
+                        </div>
+                    </div>
+                </div>
+            </p>
+        </div>
+    </div>
+        </div>
+    </div>
+    
+</body>
+</html>

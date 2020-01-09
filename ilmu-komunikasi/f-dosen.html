@@ -1,0 +1,414 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <style type="text/css">
+        .demo
+        {
+            padding: 100px 0;
+        }
+        .heading-title
+        {
+            margin-bottom: 100px;
+        }
+        .our-team{
+            box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.15);
+            text-align: center;
+            overflow: hidden;
+            position: relative;
+            transition: all 0.3s ease-in-out 0s;
+        }
+
+        .our-team .pic:before{
+            content: "";
+            background: #716a9e;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            bottom: 10px;
+            right: 10px;
+            opacity: 0.78;
+            transform: scale(0);
+            transition: all 0.3s ease-in-out 0s;
+        }
+
+        .our-team:hover .pic:before{
+            transform: scale(1);
+        }
+
+        .our-team .pic img{
+            width: 100%;
+            height: auto;
+        }
+
+        .our-team .social{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            position: absolute;
+            top: 40%;
+            opacity: 0;
+            transition: all 0.3s ease-in-out 0s;
+        }
+
+        .our-team:hover .social{
+            opacity: 1;
+        }
+
+        .our-team .social li{
+            display: inline-block;
+            position: relative;
+            transition: all 0.3s ease-in-out 0s;
+        }
+
+        .our-team .social li:nth-child(1){
+            transform: translate3d(22px, -19px, 0px);
+        }
+
+        .our-team:hover .social li:nth-child(1){
+            transform: translate3d(62px, -19px, 0px);
+        }
+
+        .our-team .social li:nth-child(2){
+            transform: translate3d(36px, 38px, 0px);
+        }
+
+        .our-team:hover .social li:nth-child(2){
+            transform: translate3d(36px, 8px, 0px);
+        }
+
+        .our-team .social li:nth-child(3){
+            transform: translate3d(-18px, -75px, 0px);
+        }
+
+        .our-team:hover .social li:nth-child(3){
+            transform: translate3d(-18px, -46px, 0px);
+        }
+
+        .our-team .social li:nth-child(4){
+            transform: translate3d(-5px, -19px, 0px);
+        }
+
+        .our-team:hover .social li:nth-child(4){
+            transform: translate3d(-43px, -19px, 0px);
+        }
+
+        .our-team .social li a{
+            display: block;
+            width: 35px;
+            height: 35px;
+            line-height: 35px;
+            background: #333;
+            font-size: 16px;
+            color: #fff;
+            margin: 0 15px 0 0;
+            transform: rotate(45deg);
+            transition: all 0.3s ease-in-out 0s;
+        }
+
+        .our-team .social li a:hover{
+            line-height: 35px;
+            background: #fff;
+            color: #333;
+            transform: rotate(-45deg);
+        }
+
+        .our-team .social li a i{
+            transform: rotate(-45deg);
+            transition: all 0.3s ease-in-out 0s;
+        }
+
+        .our-team .social li a:hover i{
+            transform: rotate(45deg);
+        }
+
+        .our-team .team-content{
+            padding: 15px 10px;
+            background: #fff;
+            position: relative;
+            transition: all 0.3s ease-in-out 0s;
+        }
+
+        .our-team .title{
+            font-size: 18px;
+            font-weight: 700;
+            color: #333;
+            text-transform: uppercase;
+            margin: 0 0 12px 0;
+        }
+
+        .our-team small{
+            display: block;
+            font-size: 14px;
+            color: #999;
+            margin-bottom: 8px;
+        }
+
+        .our-team .team-layer{
+            width: 100%;
+            padding: 34px 10px;
+            background: #f7f7f7;
+            border-bottom: 2px solid #716a9e;
+            position: absolute;
+            bottom: -50px;
+            left: 0;
+            opacity: 0;
+            transition: all 0.3s ease-in-out 0s;
+        }
+
+        .our-team:hover .team-layer{
+            bottom: 0;
+            opacity: 1;
+        }
+
+        .our-team .team-layer a{
+            display: inline-block;
+            font-size: 18px;
+            font-weight: 700;
+            color: #333;
+            text-transform: uppercase;
+            margin: 0 0 12px 0;
+            transition: all 0.3s ease-in-out 0s;
+        }
+
+        .our-team .team-layer a:hover{
+            color: #716a9e;
+        }
+
+        .our-team .post{
+            display: block;
+            font-size: 14px;
+            color: #999;
+            text-transform: capitalize;
+        }
+
+        @media only screen and (max-width: 990px){
+            .our-team{ margin-bottom: 35px; }
+            }@charset "utf-8";
+        </style>
+        <title>DOSEN FAKULTAS TEKNOLOGI INFORMASI DAN KOMUNIKASI</title>
+    </head>
+
+    <body>
+       <div class="demo">
+        <div class="container">
+            <div class="row text-center">
+                <h1>DOSEN ILMU KOMUNIKASI</h1>
+                <hr>
+                <h2></h2>
+            </div>
+            <br>
+            <br>
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <div class="our-team">
+                        <div class="pic">
+                            <img src="../assets/dosen/img/foto7.jpg" alt=""/>
+                            <ul class="social">
+                                <li><a href="https://www.facebook.com/hiskia.anggi" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="https://www.instagram.com/hiskianggi" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                                <li><a href="mailto:hiskia.anggi@my.gavilan.edu"><i class="fa fa-inbox"></i></a></li>
+                                <li><a href="https://blogs.zone.id" target="_blank"><i class="fa fa-pencil"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="team-content">
+                            <h3 class="title">Dr. Mochamad Chaerul Latif, S.Sos, M.Si</h3>
+                            <small class="post">NIDN 0623066002</small>
+                            <small class="post">NIS 06557000606003</small>
+                        </div>
+                        <div class="team-layer">
+                            <a>Dr. Mochamad Chaerul Latif, S.Sos, M.Si</a>
+                            <span class="post">NIDN 0623066002</span>
+                            <span class="post">NIS 06557000606003</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="our-team">
+                        <div class="pic">
+                            <img src="../assets/dosen/img/foto8.jpg" alt=""/>
+                            <ul class="social">
+                                <li><a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                                <li><a href="mailto:"><i class="fa fa-google"></i></a></li>
+                                <li><a href="https://" target="_blank"><i class="fa fa-pencil"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="team-content">
+                            <h3 class="title">Yuliyanto Budi Setiawan, S.Sos, M.Si.</h3>
+                            <small class="post">NIDN 0611078401</small>
+                            <small class="post">NIS 06557000606010</small>
+                        </div>
+                        <div class="team-layer">
+                            <a>Yuliyanto Budi Setiawan, S.Sos, M.Si.</a>
+                            <span class="post">NIDN 0611078401</span>
+                            <span class="post">NIS 06557000606010</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="our-team">
+                        <div class="pic">
+                            <img src="../assets/dosen/img/foto15.jpg" alt=""/>
+                            <ul class="social">
+                                <li><a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                                <li><a href="mailto:"><i class="fa fa-google"></i></a></li>
+                                <li><a href="https://" target="_blank"><i class="fa fa-pencil"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="team-content">
+                            <h3 class="title">Errika Dwi Setya Watie, S.Sos, M.I.Kom</h3>
+                            <small class="post">NIDN 0605118203</small>
+                            <small class="post">NIS 06557000606016</small>
+
+                        </div>
+                        <div class="team-layer">
+                            <a>Errika Dwi Setya Watie, S.Sos, M.I.Kom</a>
+                            <span class="post">NIDN 0605118203</span>
+                            <span class="post">NIS 06557000606016</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="our-team">
+                        <div class="pic">
+                            <img src="../assets/dosen/img/foto16.jpg" alt=""/>
+                            <ul class="social">
+                                <li><a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                                <li><a href="mailto:"><i class="fa fa-google"></i></a></li>
+                                <li><a href="https://" target="_blank"><i class="fa fa-pencil"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="team-content">
+                            <h3 class="title">Edi Nurwahyu Julianto, S.Sos, M.I.Kom</h3>
+                            <small class="post">NIDN 0609078203</small>
+                            <small class="post">NIS 06557000606014</small>
+
+                        </div>
+                        <div class="team-layer">
+                            <a>Edi Nurwahyu Julianto, S.Sos, M.I.Kom</a>
+                            <span class="post">NIDN 0609078203</span>
+                            <span class="post">NIS 06557000606014</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p>
+                <div class="row">
+                    <div class="col-md-3 col-sm-6">
+                        <div class="our-team">
+                            <div class="pic">
+                                <img src="../assets/dosen/img/foto20.jpg" alt=""/>
+                                <ul class="social">
+                                    <li><a href="https://www.facebook.com/wiwik.whynsh" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="https://www.instagram.com/wiwikwhynsh_04" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                                    <li><a href="mailto:wikwi075@gmail.com"><i class="fa fa-google"></i></a></li>
+                                    <li><a href="http://wiwikblog12.blogspot.com" target="_blank"><i class="fa fa-pencil"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="team-content">
+                                <h3 class="title">Fajriannoor Fanani, S.Sos, M.I.Kom</h3>
+                                <small class="post">NIDN 0601078502</small>
+                                <small class="post">NIS 06557000606017</small>
+                            </div>
+                            <div class="team-layer">
+                                <a>Fajriannoor Fanani, S.Sos, M.I.Kom</a>
+                                <span class="post">NIDN 0601078502</span>
+                                <span class="post">NIS 06557000606017</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6">
+                        <div class="our-team">
+                            <div class="pic">
+                                <img src="../assets/dosen/img/foto21.jpg" alt=""/>
+                                <ul class="social">
+                                    <li><a href="https://www.facebook.com/ami.u.ashari" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="https://www.instagram.com/aminuddin_sa" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                                    <li><a href="mailto:aminuddinshofi17@gmail.com"><i class="fa fa-google"></i></a></li>
+                                    <li><a href="http://realaminuddin.blogspot.com" target="_blank"><i class="fa fa-pencil"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="team-content">
+                                <h3 class="title">Gita Aprinta Ester Betseba, S.Sos, M.Si</h3>
+                                <small class="post">NIDN 0624047901</small>
+                                <small class="post">NIS 06557003102138</small>
+                            </div>
+                            <div class="team-layer">
+                                <a>Gita Aprinta Ester Betseba, S.Sos, M.Si</a>
+                                <span class="post">NIDN 0624047901</span>
+                                <span class="post">NIS 06557003102138</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6">
+                        <div class="our-team">
+                            <div class="pic">
+                                <img src="../assets/dosen/img/foto25.jpg" alt=""/>
+                                <ul class="social">
+                                    <li><a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                                    <li><a href="mailto:"><i class="fa fa-google"></i></a></li>
+                                    <li><a href="https://" target="_blank"><i class="fa fa-pencil"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="team-content">
+                                <h3 class="title">Kharisma Ayu Febriana, S.I.Kom, M.I.Kom</h3>
+                                <small class="post">NIDN 0614028901</small>
+                                <small class="post">NIS 06557000606020</small>
+
+                            </div>
+                            <div class="team-layer">
+                                <a>Kharisma Ayu Febriana, S.I.Kom, M.I.Kom</a>
+                                <span class="post">NIDN 0614028901</span>
+                                <span class="post">NIS 06557000606020</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6">
+                        <div class="our-team">
+                            <div class="pic">
+                                <img src="../assets/dosen/img/foto28.jpg" alt=""/>
+                                <ul class="social">
+                                    <li><a href="https://www.facebook.com/alfina.naur" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="https://www.instagram.com/fina_naur" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                                    <li><a href="mailto:alfinanur.rohmah@gmail.com"><i class="fa fa-google"></i></a></li>
+                                    <li><a target="_blank"><i class="fa fa-pencil"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="team-content">
+                                <h3 class="title">Firdaus Azwar Ersyad, S.Sn, M.Sn</h3>
+                                <small class="post">NIDN 0618068802</small>
+                                <small class="post">NIS 06557000606022</small>
+
+                            </div>
+                            <div class="team-layer">
+                                <a>Firdaus Azwar Ersyad, S.Sn, M.Sn</a>
+                                <span class="post">NIDN 0618068802</span>
+                                <span class="post">NIS 06557000606022</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </p>
+            <p>
+                    </div>
+                </div>
+            </p>
+        </div>
+    </div>
+</body>
+</html>

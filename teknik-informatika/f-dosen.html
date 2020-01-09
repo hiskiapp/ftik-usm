@@ -1,0 +1,616 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <style type="text/css">
+        .demo
+        {
+            padding: 100px 0;
+        }
+        .heading-title
+        {
+            margin-bottom: 100px;
+        }
+        .our-team{
+            box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.15);
+            text-align: center;
+            overflow: hidden;
+            position: relative;
+            transition: all 0.3s ease-in-out 0s;
+        }
+
+        .our-team .pic:before{
+            content: "";
+            background: #716a9e;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            bottom: 10px;
+            right: 10px;
+            opacity: 0.78;
+            transform: scale(0);
+            transition: all 0.3s ease-in-out 0s;
+        }
+
+        .our-team:hover .pic:before{
+            transform: scale(1);
+        }
+
+        .our-team .pic img{
+            width: 100%;
+            height: auto;
+        }
+
+        .our-team .social{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            position: absolute;
+            top: 40%;
+            opacity: 0;
+            transition: all 0.3s ease-in-out 0s;
+        }
+
+        .our-team:hover .social{
+            opacity: 1;
+        }
+
+        .our-team .social li{
+            display: inline-block;
+            position: relative;
+            transition: all 0.3s ease-in-out 0s;
+        }
+
+        .our-team .social li:nth-child(1){
+            transform: translate3d(22px, -19px, 0px);
+        }
+
+        .our-team:hover .social li:nth-child(1){
+            transform: translate3d(62px, -19px, 0px);
+        }
+
+        .our-team .social li:nth-child(2){
+            transform: translate3d(36px, 38px, 0px);
+        }
+
+        .our-team:hover .social li:nth-child(2){
+            transform: translate3d(36px, 8px, 0px);
+        }
+
+        .our-team .social li:nth-child(3){
+            transform: translate3d(-18px, -75px, 0px);
+        }
+
+        .our-team:hover .social li:nth-child(3){
+            transform: translate3d(-18px, -46px, 0px);
+        }
+
+        .our-team .social li:nth-child(4){
+            transform: translate3d(-5px, -19px, 0px);
+        }
+
+        .our-team:hover .social li:nth-child(4){
+            transform: translate3d(-43px, -19px, 0px);
+        }
+
+        .our-team .social li a{
+            display: block;
+            width: 35px;
+            height: 35px;
+            line-height: 35px;
+            background: #333;
+            font-size: 16px;
+            color: #fff;
+            margin: 0 15px 0 0;
+            transform: rotate(45deg);
+            transition: all 0.3s ease-in-out 0s;
+        }
+
+        .our-team .social li a:hover{
+            line-height: 35px;
+            background: #fff;
+            color: #333;
+            transform: rotate(-45deg);
+        }
+
+        .our-team .social li a i{
+            transform: rotate(-45deg);
+            transition: all 0.3s ease-in-out 0s;
+        }
+
+        .our-team .social li a:hover i{
+            transform: rotate(45deg);
+        }
+
+        .our-team .team-content{
+            padding: 15px 10px;
+            background: #fff;
+            position: relative;
+            transition: all 0.3s ease-in-out 0s;
+        }
+
+        .our-team .title{
+            font-size: 18px;
+            font-weight: 700;
+            color: #333;
+            text-transform: uppercase;
+            margin: 0 0 12px 0;
+        }
+
+        .our-team small{
+            display: block;
+            font-size: 14px;
+            color: #999;
+            margin-bottom: 8px;
+        }
+
+        .our-team .team-layer{
+            width: 100%;
+            padding: 34px 10px;
+            background: #f7f7f7;
+            border-bottom: 2px solid #716a9e;
+            position: absolute;
+            bottom: -50px;
+            left: 0;
+            opacity: 0;
+            transition: all 0.3s ease-in-out 0s;
+        }
+
+        .our-team:hover .team-layer{
+            bottom: 0;
+            opacity: 1;
+        }
+
+        .our-team .team-layer a{
+            display: inline-block;
+            font-size: 18px;
+            font-weight: 700;
+            color: #333;
+            text-transform: uppercase;
+            margin: 0 0 12px 0;
+            transition: all 0.3s ease-in-out 0s;
+        }
+
+        .our-team .team-layer a:hover{
+            color: #716a9e;
+        }
+
+        .our-team .post{
+            display: block;
+            font-size: 14px;
+            color: #999;
+            text-transform: capitalize;
+        }
+
+        @media only screen and (max-width: 990px){
+            .our-team{ margin-bottom: 35px; }
+            }@charset "utf-8";
+        </style>
+        <title>DOSEN FAKULTAS TEKNOLOGI INFORMASI DAN KOMUNIKASI</title>
+    </head>
+
+    <body>
+       <div class="demo">
+        <div class="container">
+            <div class="row text-center">
+                <h1>DOSEN TEKNIK INFORMATIKA</h1>
+                <hr>
+                <h2></h2>
+            </div>
+            <br>
+            <br>
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <div class="our-team">
+                        <div class="pic">
+                            <img src="../assets/dosen/img/foto4.jpg" alt=""/>
+                            <ul class="social">
+                                <li><a href="https://www.facebook.com/hiskia.anggi" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="https://www.instagram.com/hiskianggi" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                                <li><a href="mailto:hiskia.anggi@my.gavilan.edu"><i class="fa fa-inbox"></i></a></li>
+                                <li><a href="https://blogs.zone.id" target="_blank"><i class="fa fa-pencil"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="team-content">
+                            <h3 class="title">Susanto, S.Kom, M.Kom</h3>
+                            <small class="post">NIDN 0621027601</small>
+                            <small class="post">NIS 06557060687098</small>
+                        </div>
+                        <div class="team-layer">
+                            <a>Susanto, S.Kom, M.Kom</a>
+                            <span class="post">NIDN 0621027601</span>
+                            <span class="post">NIS 06557060687098</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="our-team">
+                        <div class="pic">
+                            <img src="../assets/dosen/img/foto5.jpg" alt=""/>
+                            <ul class="social">
+                                <li><a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                                <li><a href="mailto:"><i class="fa fa-google"></i></a></li>
+                                <li><a href="https://" target="_blank"><i class="fa fa-pencil"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="team-content">
+                            <h3 class="title">Nur Wakhidah, S.Kom, M.Cs</h3>
+                            <small class="post">NIDN 0626047901</small>
+                            <small class="post">NIS 06557003102100</small>
+                        </div>
+                        <div class="team-layer">
+                            <a>Nur Wakhidah, S.Kom, M.Cs</a>
+                            <span class="post">NIDN 0626047901</span>
+                            <span class="post">NIS 06557003102100</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="our-team">
+                        <div class="pic">
+                            <img src="../assets/dosen/img/foto9.jpg" alt=""/>
+                            <ul class="social">
+                                <li><a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                                <li><a href="mailto:"><i class="fa fa-google"></i></a></li>
+                                <li><a href="https://" target="_blank"><i class="fa fa-pencil"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="team-content">
+                            <h3 class="title">Sri Handayani,ST,MT</h3>
+                            <small class="post">NIDN 0602107202</small>
+                            <small class="post">NIS 06557003102116</small>
+
+                        </div>
+                        <div class="team-layer">
+                            <a>Sri Handayani,ST,MT</a>
+                            <span class="post">NIDN 0602107202</span>
+                            <span class="post">NIS 06557003102116</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="our-team">
+                        <div class="pic">
+                            <img src="../assets/dosen/img/foto10.jpg" alt=""/>
+                            <ul class="social">
+                                <li><a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                                <li><a href="mailto:"><i class="fa fa-google"></i></a></li>
+                                <li><a href="https://" target="_blank"><i class="fa fa-pencil"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="team-content">
+                            <h3 class="title">Atmoko Nugroho,ST,M.Eng</h3>
+                            <small class="post">NIDN 0606077501</small>
+                            <small class="post">NIS 06557003102126</small>
+
+                        </div>
+                        <div class="team-layer">
+                            <a>Atmoko Nugroho,ST,M.Eng</a>
+                            <span class="post">NIDN 0606077501</span>
+                            <span class="post">NIS 06557003102126</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p>
+                <div class="row">
+                    <div class="col-md-3 col-sm-6">
+                        <div class="our-team">
+                            <div class="pic">
+                                <img src="../assets/dosen/img/foto11.jpg" alt=""/>
+                                <ul class="social">
+                                    <li><a href="https://www.facebook.com/wiwik.whynsh" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="https://www.instagram.com/wiwikwhynsh_04" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                                    <li><a href="mailto:wikwi075@gmail.com"><i class="fa fa-google"></i></a></li>
+                                    <li><a href="http://wiwikblog12.blogspot.com" target="_blank"><i class="fa fa-pencil"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="team-content">
+                                <h3 class="title">B.VERY CHRISTIOKO,S.KOM, M.KOM</h3>
+                                <small class="post">NIDN 0615098202</small>
+                                <small class="post">NIS 06557003102129</small>
+                            </div>
+                            <div class="team-layer">
+                                <a>B.VERY CHRISTIOKO,S.KOM, M.KOM</a>
+                                <span class="post">NIDN 0615098202</span>
+                                <span class="post">NIS 06557003102129</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6">
+                        <div class="our-team">
+                            <div class="pic">
+                                <img src="../assets/dosen/img/foto13.jpg" alt=""/>
+                                <ul class="social">
+                                    <li><a href="https://www.facebook.com/ami.u.ashari" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="https://www.instagram.com/aminuddin_sa" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                                    <li><a href="mailto:aminuddinshofi17@gmail.com"><i class="fa fa-google"></i></a></li>
+                                    <li><a href="http://realaminuddin.blogspot.com" target="_blank"><i class="fa fa-pencil"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="team-content">
+                                <h3 class="title">APRIL FIRMAN DARU,S.Kom, M.Kom</h3>
+                                <small class="post">NIDN 0625047605</small>
+                                <small class="post">NIS 06557003102133</small>
+                            </div>
+                            <div class="team-layer">
+                                <a>APRIL FIRMAN DARU,S.Kom, M.Kom</a>
+                                <span class="post">NIDN 0625047605</span>
+                                <span class="post">NIS 06557003102133</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6">
+                        <div class="our-team">
+                            <div class="pic">
+                                <img src="../assets/dosen/img/foto17.jpg" alt=""/>
+                                <ul class="social">
+                                    <li><a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                                    <li><a href="mailto:"><i class="fa fa-google"></i></a></li>
+                                    <li><a href="https://" target="_blank"><i class="fa fa-pencil"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="team-content">
+                                <h3 class="title">HETTY CATUR ELLYAWATI, S.S, M.HUM</h3>
+                                <small class="post">NIDN 0606058203</small>
+                                <small class="post">NIS 06557003102135</small>
+
+                            </div>
+                            <div class="team-layer">
+                                <a>HETTY CATUR ELLYAWATI, S.S, M.HUM</a>
+                                <span class="post">NIDN 0606058203</span>
+                                <span class="post">NIS 06557003102135</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6">
+                        <div class="our-team">
+                            <div class="pic">
+                                <img src="../assets/dosen/img/foto18.jpg" alt=""/>
+                                <ul class="social">
+                                    <li><a href="https://www.facebook.com/alfina.naur" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="https://www.instagram.com/fina_naur" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                                    <li><a href="mailto:alfinanur.rohmah@gmail.com"><i class="fa fa-google"></i></a></li>
+                                    <li><a target="_blank"><i class="fa fa-pencil"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="team-content">
+                                <h3 class="title">Whisnumurti Adhiwibowo, ST, M.Kom</h3>
+                                <small class="post">NIDN 0612117602</small>
+                                <small class="post">NIS 06557003102137</small>
+
+                            </div>
+                            <div class="team-layer">
+                                <a>Whisnumurti Adhiwibowo, ST, M.Kom</a>
+                                <span class="post">NIDN 0612117602</span>
+                                <span class="post">NIS 06557003102137</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </p>
+            <p>
+                <div class="row">
+                    <div class="col-md-3 col-sm-6">
+                        <div class="our-team">
+                            <div class="pic">
+                                <img src="../assets/dosen/img/foto19.jpg" alt=""/>
+                                <ul class="social">
+                                    <li><a href="https://www.facebook.com/ludin.muhammad.92" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                                    <li><a href="mailto:muh.Kamalludin@gmail.com"><i class="fa fa-google"></i></a></li>
+                                    <li><a href="http://myblogmuhammadkamal.blogspot.com" target="_blank"><i class="fa fa-pencil"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="team-content">
+                                <h3 class="title">Basworo Ardi Pramono, ST, MT.</h3>
+                                <small class="post">NIDN 0628128202</small>
+                                <small class="post">NIS 06557003102140</small>
+                            </div>
+                            <div class="team-layer">
+                                <a>Basworo Ardi Pramono, ST, MT.</a>
+                                <span class="post">NIDN 0628128202</span>
+                                <span class="post">NIS 06557003102140</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6">
+                        <div class="our-team">
+                            <div class="pic">
+                                <img src="../assets/dosen/img/foto22.jpg" alt=""/>
+                                <ul class="social">
+                                    <li><a href="https://www.facebook.com/ishanty.loverzz" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="https://www.instagram.com/isyanti_79"  target="_blank"><i class="fa fa-instagram"></i></a></li>
+                                    <li><a href="mailto:iissugianti31@gmail.com"><i class="fa fa-google"></i></a></li>
+                                    <li><a href="https://www.youtube.com/channel/UCJDma1yD-hRdcPT2sJoSOJQ" target="_blank"><i class="fa fa-youtube"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="team-content">
+                                <h3 class="title">Febrian Wahyu Christanto, S.Kom., M.Cs.</h3>
+                                <small class="post">NIDN 0601028801</small>
+                                <small class="post">NIS 06557003102150</small>
+                            </div>
+                            <div class="team-layer">
+                                <a>Febrian Wahyu Christanto, S.Kom., M.Cs.</a>
+                                <span class="post">NIDN 0601028801</span>
+                                <span class="post">NIS 06557003102150</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6">
+                        <div class="our-team">
+                            <div class="pic">
+                                <img src="../assets/dosen/img/foto23.jpg" alt=""/>
+                                <ul class="social">
+                                    <li><a href="https://www.facebook.com/tegarmiftaqur.rohim.1" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="http://tegarblog77.blogspot.com" target="_blank"><i class="fa fa-pencil"></i></a></li>
+                                    <li><a href="mailto:tegarmiftaqurrohim@gmail.com"><i class="fa fa-google"></i></a></li>
+                                    <li><a href="https://" target="_blank"><i class="fa fa-youtube"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="team-content">
+                                <h3 class="title">Rastri Prathivi, M.Kom</h3>
+                                <small class="post">NIDN 0601028801</small>
+                                <small class="post">NIS 06557003102154</small>
+
+                            </div>
+                            <div class="team-layer">
+                                <a>Rastri Prathivi, M.Kom</a>
+                                <span class="post">NIDN 0601028801</span>
+                                <span class="post">NIS 06557003102154</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6">
+                        <div class="our-team">
+                            <div class="pic">
+                                <img src="../assets/dosen/img/foto24.jpg" alt=""/>
+                                <ul class="social">
+                                    <li><a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                                    <li><a href="mailto:"><i class="fa fa-google"></i></a></li>
+                                    <li><a href="https://" target="_blank"><i class="fa fa-pencil"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="team-content">
+                                <h3 class="title">Aria Hendrawan, ST, M.Kom</h3>
+                                <small class="post">NIDN 0621038501</small>
+                                <small class="post">NIS 06557003102159</small>
+
+                            </div>
+                            <div class="team-layer">
+                                <a>Aria Hendrawan, ST, M.Kom</a>
+                                <span class="post">NIDN 0621038501</span>
+                                <span class="post">NIS 06557003102159</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </p>
+            <p>
+                <div class="row">
+                    <div class="col-md-3 col-sm-6">
+                        <div class="our-team">
+                            <div class="pic">
+                                <img src="../assets/dosen/img/foto26.jpg" alt=""/>
+                                <ul class="social">
+                                    <li><a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                                    <li><a href="mailto:"><i class="fa fa-google"></i></a></li>
+                                    <li><a href="https://" target="_blank"><i class="fa fa-pencil"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="team-content">
+                                <h3 class="title">Siti Asmiatun, S.Kom, M.Kom</h3>
+                                <small class="post">NIDN 0625029101</small>
+                                <small class="post">NIS 06557003102172</small>
+                            </div>
+                            <div class="team-layer">
+                                <a>Siti Asmiatun, S.Kom, M.Kom</a>
+                                <span class="post">NIDN 0625029101</span>
+                                <span class="post">NIS 06557003102172</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6">
+                        <div class="our-team">
+                            <div class="pic">
+                                <img src="../assets/dosen/img/foto27.jpg" alt=""/>
+                                <ul class="social">
+                                    <li><a href="https://www.facebook.com/adelia.c.coboyjunior" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="https://www.instagram.com/adeliavista28" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                                    <li><a href="mailto:adeliavistaa28@gmail.com"><i class="fa fa-google"></i></a></li>
+                                    <li><a href="http://adeliavm.blogspot.com" target="_blank"><i class="fa fa-pencil"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="team-content">
+                                <h3 class="title">ASTRID NOVITA PUTRI, M. KOM.</h3>
+                                <small class="post">NIDN 0605119001</small>
+                                <small class="post">NIS 06557003102179</small>
+                            </div>
+                            <div class="team-layer">
+                                <a>ASTRID NOVITA PUTRI, M. KOM.</a>
+                                <span class="post">NIDN 0605119001</span>
+                                <span class="post">NIS 06557003102179</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6">
+                        <div class="our-team">
+                            <div class="pic">
+                                <img src="../assets/dosen/img/foto30.jpg" alt=""/>
+                                <ul class="social">
+                                    <li><a href="https://www.facebook.com/profile.php?id=100008704660048" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="https://www.instagram.com/Auliya_fika27" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                                    <li><a href="mailto:fikanaurr2002@gmail.com"><i class="fa fa-google"></i></a></li>
+                                    <li><a target="_blank"><i class="fa fa-pencil"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="team-content">
+                                <h3 class="title">Dewi Nurdiyah, S.Kom., M.Kom.</h3>
+                                <small class="post">NIDN 0605128903</small>
+                                <small class="post">NIS 06557003102182</small>
+
+                            </div>
+                            <div class="team-layer">
+                                <a>Dewi Nurdiyah, S.Kom., M.Kom.</a>
+                                <span class="post">NIDN 0605128903</span>
+                                <span class="post">NIS 06557003102182</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6">
+                        <div class="our-team">
+                            <div class="pic">
+                                <img src="../assets/dosen/img/foto31.jpg" alt=""/>
+                                <ul class="social">
+                                    <li><a href="https://www.facebook.com/intan.aini.73932" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="https://www.instagram.com/intan.n.aini" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                                    <li><a href="mailto:ainiintan68@gmail.com"><i class="fa fa-google"></i></a></li>
+                                    <li><a target="_blank"><i class="fa fa-pencil"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="team-content">
+                                <h3 class="title">Khoirudin, S.Kom, M.Eng</h3>
+                                <small class="post">NIDN 0622028901</a></small>
+                                <small class="post">NIS 06557003102173</small>
+
+                            </div>
+                            <div class="team-layer">
+                                <a>Khoirudin, S.Kom, M.Eng</a>
+                                <span class="post">NIDN 0622028901</span>
+                                <span class="post">NIS 06557003102173</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </p>
+            <p>
+                    </div>
+                </div>
+            </p>
+        </div>
+    </div>
+</body>
+</html>

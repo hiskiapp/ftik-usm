@@ -1,0 +1,3 @@
+Preview Website Bisa Dilihat di : https://ftik.hiskia.net
+
+Penggunaan Script Ini Diharuskan Menggunakan Apache/Xampp. Karena Bekerja Dengan .htaccess
